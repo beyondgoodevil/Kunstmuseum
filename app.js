@@ -15,7 +15,6 @@ const paintingImg      = document.getElementById('paintingImg');
 const loadingState     = document.getElementById('loadingState');
 const descPlaceholder  = document.getElementById('descPlaceholder');
 const descContent      = document.getElementById('descContent');
-const sourceLink       = document.getElementById('sourceLink');
 const descTitle        = document.getElementById('descTitle');
 const descArtist       = document.getElementById('descArtist');
 const descDate         = document.getElementById('descDate');
@@ -269,8 +268,7 @@ function displayPainting(fileTitle, info, categoryEntry, imgUrl) {
   paintingImg.classList.remove('hidden', 'fade-in', 'loaded');
   requestAnimationFrame(() => paintingImg.classList.add('loaded', 'fade-in'));
 
-  sourceLink.href = `https://commons.wikimedia.org/wiki/${encodeURIComponent(fileTitle)}`;
-  sourceLink.classList.add('visible');
+
 
   // Theme badge
   const theme = detectTheme(categoryEntry.category);
