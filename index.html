@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Eternal Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="grain-overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <span class="header-label">Wikimedia Commons Collection</span>
+      <h1 class="site-title">The Eternal Gallery</h1>
+      <p class="site-subtitle">Paintings of Sacred, Mythic &amp; Literary Minds</p>
+    </div>
+  </header>
+
+  <!-- Category Filter -->
+  <nav class="category-nav">
+    <button class="cat-btn active" data-cat="all">All</button>
+    <span class="nav-divider">|</span>
+    <button class="cat-btn" data-cat="religious">Religious</button>
+    <span class="nav-divider">|</span>
+    <button class="cat-btn" data-cat="mythological">Mythological</button>
+    <span class="nav-divider">|</span>
+    <button class="cat-btn" data-cat="literary">Literary &amp; Philosophical</button>
+  </nav>
+
+  <!-- Main Gallery -->
+  <main class="gallery-main">
+
+    <!-- Canvas / Image Display -->
+    <section class="canvas-section">
+      <div class="frame-wrapper" id="frameWrapper">
+        <div class="frame-inner">
+          <div class="painting-container" id="paintingContainer">
+            <div class="loading-state" id="loadingState">
+              <div class="loader-ring"></div>
+              <p>Summoning from the archives…</p>
+            </div>
+            <img id="paintingImg" src="" alt="" class="painting-img hidden" />
+          </div>
+        </div>
+        <div class="frame-shadow"></div>
+      </div>
+
+      <div class="canvas-controls">
+        <button class="random-btn" id="randomBtn">
+          <span class="btn-icon">✦</span>
+          <span class="btn-text">Random Painting</span>
+        </button>
+        <a class="source-link" id="sourceLink" href="#" target="_blank" rel="noopener">View on Wikimedia ↗</a>
+      </div>
+    </section>
+
+    <!-- Description Panel -->
+    <aside class="description-panel" id="descriptionPanel">
+      <div class="desc-placeholder" id="descPlaceholder">
+        <p>Select a category above and press<br><em>Random Painting</em> to begin.</p>
+      </div>
+
+      <div class="desc-content hidden" id="descContent">
+        <div class="desc-category-badge" id="descCategoryBadge"></div>
+
+        <h2 class="desc-title" id="descTitle">—</h2>
+        <p class="desc-artist" id="descArtist"></p>
+        <p class="desc-date" id="descDate"></p>
+
+        <div class="desc-divider"></div>
+
+        <div class="desc-meta">
+          <div class="meta-row" id="metaMedium" style="display:none">
+            <span class="meta-label">Medium</span>
+            <span class="meta-value" id="metaMediumVal"></span>
+          </div>
+          <div class="meta-row" id="metaDimensions" style="display:none">
+            <span class="meta-label">Dimensions</span>
+            <span class="meta-value" id="metaDimensionsVal"></span>
+          </div>
+          <div class="meta-row" id="metaInstitution" style="display:none">
+            <span class="meta-label">Collection</span>
+            <span class="meta-value" id="metaInstitutionVal"></span>
+          </div>
+          <div class="meta-row" id="metaCategory">
+            <span class="meta-label">Theme</span>
+            <span class="meta-value" id="metaCategoryVal"></span>
+          </div>
+        </div>
+
+        <div class="desc-divider"></div>
+
+        <div class="desc-description" id="descDescription"></div>
+
+        <div class="desc-filename" id="descFilename"></div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Images sourced from <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> under open licenses. All artwork is in the public domain.</p>
+  </footer>
+
+  <script src="js/categories.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
