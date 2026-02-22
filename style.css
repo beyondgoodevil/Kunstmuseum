@@ -29,7 +29,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
@@ -66,7 +66,7 @@ header::before {
 
 .header-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--gold-dim);
@@ -76,7 +76,7 @@ header::before {
 
 .site-title {
   font-family: 'Cinzel', serif;
-  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
   font-weight: 400;
   color: var(--gold-light);
   letter-spacing: 0.08em;
@@ -85,8 +85,8 @@ header::before {
 }
 
 .site-subtitle {
-  margin-top: 0.6rem;
-  font-size: 1rem;
+  margin-top: 0.7rem;
+  font-size: clamp(1.6rem, 3.5vw, 3rem);
   font-style: italic;
   color: var(--cream-dim);
   letter-spacing: 0.05em;
@@ -108,7 +108,7 @@ header::before {
   background: none;
   border: none;
   font-family: 'Cinzel', serif;
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -256,10 +256,10 @@ header::before {
   border: 1px solid var(--gold-dim);
   color: var(--gold);
   font-family: 'Cinzel', serif;
-  font-size: 0.78rem;
+  font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 0.8rem 2.2rem;
+  padding: 1rem 2.6rem;
   cursor: pointer;
   transition: background 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
   position: relative;
@@ -297,7 +297,7 @@ header::before {
 
 .source-link {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 0.12em;
   color: var(--text-muted);
@@ -346,7 +346,7 @@ header::before {
 
 .desc-category-badge {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.78rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold-dim);
@@ -355,7 +355,7 @@ header::before {
 
 .desc-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 400;
   color: var(--cream);
   line-height: 1.3;
@@ -363,7 +363,7 @@ header::before {
 }
 
 .desc-artist {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
   color: var(--gold);
   margin-bottom: 0.2rem;
@@ -371,7 +371,7 @@ header::before {
 
 .desc-date {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.08em;
   color: var(--text-muted);
@@ -398,27 +398,27 @@ header::before {
 
 .meta-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
+  font-size: 0.72rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold-dim);
-  min-width: 80px;
+  min-width: 90px;
   flex-shrink: 0;
 }
 
 .meta-value {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--cream-dim);
   line-height: 1.5;
 }
 
 /* ── Description Text ── */
 .desc-description {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.8;
   font-style: italic;
-  max-height: 160px;
+  max-height: 180px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--gold-dim) transparent;
@@ -430,7 +430,7 @@ header::before {
 .desc-filename {
   margin-top: 1.2rem;
   font-family: 'Raleway', sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: var(--text-muted);
   opacity: 0.5;
@@ -442,7 +442,7 @@ footer {
   text-align: center;
   padding: 2rem;
   border-top: 1px solid var(--border-dim);
-  font-size: 0.82rem;
+  font-size: 1rem;
   color: var(--text-muted);
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
